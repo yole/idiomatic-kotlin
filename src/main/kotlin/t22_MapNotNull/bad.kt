@@ -3,7 +3,7 @@ package t22_MapNotNull.bad
 data class Result(val data: Any?,
                   val errorMessage: String?)
 
-fun listAllErrorMessages(errors: List<Result>): List<String> =
-    errors.map { it.errorMessage }.filterNotNull()
+fun listAllErrorMessages(results: List<Result>): List<String> =
+    results.map { it.errorMessage }.filterNotNull()
 
 

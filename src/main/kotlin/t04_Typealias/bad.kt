@@ -2,10 +2,10 @@ package t04_Typealias.bad
 
 class Event
 
-class HandlerList {
-    fun addOnClickHandler(handler: (Event) -> Unit) {
+class EventDispatcher {
+    fun addClickHandler(handler: (Event) -> Unit) {
     }
 
-    fun removeOnClickHandler(handler: (Event) -> Unit) {
+    fun removeClickHandler(handler: (Event) -> Unit) {
     }
 }

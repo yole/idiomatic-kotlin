@@ -1,3 +1,4 @@
 package t16_Range.bad
 
-fun isLatinUppercase(c: Char) = c >= 'A' && c <= 'Z'
+fun isLatinUppercase(c: Char) =
+    c >= 'A' && c <= 'Z'

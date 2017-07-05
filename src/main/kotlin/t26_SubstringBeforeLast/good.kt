@@ -1,9 +1,8 @@
 package t26_SubstringBeforeLast.good
 
-data class PathComponents(val directory: String,
-                          val pathName: String)
+data class PathParts(val directory: String,
+                     val fileName: String)
 
-fun splitPath(path: String): PathComponents {
-    return PathComponents(path.substringBeforeLast('/', ""),
-            path.substringAfterLast('/'))
-}
+fun splitPath(path: String) = PathParts(
+    path.substringBeforeLast('/', ""),
+    path.substringAfterLast('/'))

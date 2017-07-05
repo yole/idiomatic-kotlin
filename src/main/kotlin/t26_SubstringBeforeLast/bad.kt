@@ -1,14 +1,14 @@
 package t26_SubstringBeforeLast.bad
 
-data class PathComponents(val directory: String,
-                          val pathName: String)
+data class PathParts(val directory: String,
+                     val fileName: String)
 
 val pattern = Regex("(.+)/([^/]*)")
 
-fun splitPath(path: String): PathComponents {
+fun splitPath(path: String): PathParts {
     val match = pattern.matchEntire(path)
-            ?: return PathComponents("", path)
+            ?: return PathParts("", path)
 
-    return PathComponents(match.groupValues[1],
+    return PathParts(match.groupValues[1],
             match.groupValues[2])
 }

@@ -14,6 +14,7 @@ class MyTest {
     }
 
     @Test fun foo() {
-        Assert.assertEquals("abc", state.data)
+        Assert.assertEquals("abc",
+            state.data)
     }
 }

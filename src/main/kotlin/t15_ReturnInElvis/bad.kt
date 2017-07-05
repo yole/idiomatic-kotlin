@@ -1,6 +1,7 @@
 package t15_ReturnInElvis.bad
 
-class Person(val name: String?, val age: Int?)
+class Person(val name: String?,
+             val age: Int?)
 
 fun processPerson(person: Person) {
     if (person.name == null)

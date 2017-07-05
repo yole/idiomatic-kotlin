@@ -1,11 +1,12 @@
 package t12_DestructuringList.good
 
-data class NameComponents(val name: String, val ext: String?)
+data class NameExt(val name: String,
+                   val ext: String?)
 
-fun splitNameAndExtension(filename: String): NameComponents {
+fun splitNameAndExtension(filename: String): NameExt {
     if ('.' in filename) {
         val (name, ext) = filename.split('.', limit = 2)
-        return NameComponents(name, ext)
+        return NameExt(name, ext)
     }
-    return NameComponents(filename, null)
+    return NameExt(filename, null)
 }

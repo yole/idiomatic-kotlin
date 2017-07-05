@@ -1,6 +1,7 @@
 package t23_CompareBy.bad
 
-class Person(val name: String, val age: Int)
+class Person(val name: String,
+             val age: Int)
 
 fun sortPersons(persons: List<Person>) =
     persons.sortedWith(Comparator<Person> { person1, person2 ->
