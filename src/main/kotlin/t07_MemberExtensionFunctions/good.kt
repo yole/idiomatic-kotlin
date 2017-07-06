@@ -1,7 +1,6 @@
 package t07_MemberExtensionFunctions.good
 
 class PhoneBook {
-    fun findPhone(name: String) = "1234567"
 }
 
 private fun String.isPhoneNumber() =
