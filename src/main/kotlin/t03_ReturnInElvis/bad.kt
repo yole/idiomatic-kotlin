@@ -4,10 +4,12 @@ class Person(val name: String?,
              val age: Int?)
 
 fun processPerson(person: Person) {
-    if (person.name == null)
+    val name = person.name
+    if (name == null)
         throw IllegalArgumentException("Person must have a name")
-    if (person.age == null) return
+    val age = person.age
+    if (age == null) return
 
-    println("${person.name}: ${person.age}")
+    println("$name: $age")
 }
 
