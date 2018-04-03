@@ -4,4 +4,4 @@ class PhoneBook {
 }
 
 private fun String.isPhoneNumber() =
-        length == 7 && all { it.isDigit() }
+    length == 7 && all { it.isDigit() }

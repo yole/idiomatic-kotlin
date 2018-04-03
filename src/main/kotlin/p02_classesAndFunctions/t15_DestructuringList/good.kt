@@ -1,7 +1,9 @@
 package p02_classesAndFunctions.t15_DestructuringList.good
 
-data class NameExt(val name: String,
-                   val ext: String?)
+data class NameExt(
+    val name: String,
+    val ext: String?
+)
 
 fun splitNameAndExtension(filename: String): NameExt {
     if ('.' in filename) {

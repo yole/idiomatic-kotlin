@@ -9,12 +9,16 @@ class MyTest {
 
     private lateinit var state: State
 
-    @Before fun setup() {
+    @Before
+    fun setup() {
         state = State("abc")
     }
 
-    @Test fun foo() {
-        Assert.assertEquals("abc",
-            state.data)
+    @Test
+    fun foo() {
+        Assert.assertEquals(
+            "abc",
+            state.data
+        )
     }
 }

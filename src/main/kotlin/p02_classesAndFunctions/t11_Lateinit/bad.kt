@@ -9,11 +9,13 @@ class MyTest {
 
     private var state: State? = null
 
-    @Before fun setup() {
+    @Before
+    fun setup() {
         state = State("abc")
     }
 
-    @Test fun foo() {
+    @Test
+    fun foo() {
         Assert.assertEquals("abc", state!!.data)
     }
 }
