@@ -1,7 +1,8 @@
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.2.21'
+    ext.kotlin_version = '1.2.31'
+    ext.kotlinx_html_version = '0.6.9'
 
     repositories {
         mavenCentral()
@@ -18,10 +19,12 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile "org.jetbrains.kotlinx:kotlinx-html-jvm:${kotlinx_html_version}"
     compile group: 'junit', name: 'junit', version: '4.12'
 }
 
