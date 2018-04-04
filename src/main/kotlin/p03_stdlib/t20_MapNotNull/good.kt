@@ -5,5 +5,5 @@ data class Result(
     val errorMessage: String?
 )
 
-fun listAllErrorMessages(results: List<Result>): List<String> =
+fun listErrors(results: List<Result>): List<String> =
     results.mapNotNull { it.errorMessage }
